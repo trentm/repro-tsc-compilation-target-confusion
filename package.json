@@ -1,14 +1,10 @@
 {
   "name": "repro-tsc-compilation-target-confusion",
+  "private": true,
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "start": "tsc --build && node build/src/index.js"
+    "start": "tsc --build tsconfig.json && node packages/a/build/src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
     "typescript": "5.0.4"
   }
