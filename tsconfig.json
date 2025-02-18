@@ -4,6 +4,9 @@
   "references": [
     {
       "path": "packages/a"
+    },
+    {
+      "path": "packages/old"
     }
   ]
 }

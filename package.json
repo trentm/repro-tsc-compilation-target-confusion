@@ -3,7 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc --build tsconfig.json && node packages/a/build/src/index.js"
+    "compile": "rm -rf build packages/*/build && tsc --build tsconfig.json",
+    "start-a": "node packages/a/build/src/index.js",
+    "start-old": "node packages/old/build/src/index.js"
   },
   "devDependencies": {
     "typescript": "5.0.4"
